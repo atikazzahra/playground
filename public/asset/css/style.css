@@ -1,0 +1,70 @@
+body {
+  background-color: #423d3d;
+}
+.demo-frame{
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7faed;
+  padding-top: 18px;
+  padding-right: 12px;
+  padding-left: 12px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.5);
+}
+#loading {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 18px;
+  background: #9fd4b3;
+}
+#ghost {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 18px;
+}
+#loading-gif {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#ghost-gif {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+}
+#action {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+.hide {
+  display: none;
+}
+.onpause {
+  background-image: url(../image/play.png);
+}
+.onplay {
+  background-image: url(../image/pause.png);
+}
+video {
+  visibility: hidden;
+}
+canvas {
+  position: absolute;
+  top: 18px;
+}
+#match {
+  text-align: center;
+  font-size: 5em;
+}
