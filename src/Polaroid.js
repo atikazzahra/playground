@@ -18,6 +18,7 @@ export default class Polaroid2 {
     this.camera = true
     this.videoSrc = ''
     this.setTimeout = 0
+    this.showPlot = false
   }
   run() {
     if (this.camera) {
@@ -91,8 +92,10 @@ export default class Polaroid2 {
         if (this.video.readyState === this.video.HAVE_ENOUGH_DATA) {
           const resultMatch = this.tracker.doMatch()
           this.isImageDetected(resultMatch.result)
-          this.drawPlotPoints(resultMatch)
-          console.log(resultMatch.result)
+          if (this.showPlot) {
+            this.drawPlotPoints(resultMatch)
+          }
+          // console.log(resultMatch.result)
         }
       }
       this.requestFrame()
@@ -116,7 +119,7 @@ export default class Polaroid2 {
     } else {
       if (!this.gif.classList.contains('hide') && !this.setTimeout) {
         const timeout = setTimeout(() => {
-          console.log('call pls')
+          // console.log('call pls')
           this.gif.classList.add('hide');
           this.setTimeout = 0
         }, 300)

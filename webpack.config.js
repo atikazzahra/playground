@@ -65,7 +65,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, '/public/asset/'),
+    path: path.join(__dirname, 'public/asset'),
     filename: 'js/bundle.js'
   },
 

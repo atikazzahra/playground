@@ -20,12 +20,10 @@ export default class ImageTracker {
     }
   }
   isMatch(matches) {
-    console.log(matches.length)
     if (matches.length <= this.matchesThreshold) {
       return false
     }
     const RMSE = this.getRMSE(matches)
-    console.log(RMSE)
     return RMSE.result <= this.errorThreshold && RMSE.result > 0 ? true : false
   }
   getRMSE(matches) {
