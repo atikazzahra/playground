@@ -20,7 +20,9 @@
   "homepage": "https://github.com/atikazzahra/playground#readme",
   "dependencies": {
     "@webpack-cli/init": "^0.1.5",
-    "compute-cosine-similarity": "^1.0.0"
+    "compute-cosine-similarity": "^1.0.0",
+    "normalize-to-range": "^2.0.0",
+    "regression": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

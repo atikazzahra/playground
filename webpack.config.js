@@ -65,9 +65,8 @@ module.exports = {
   },
 
   output: {
-    chunkFilename: '[name].js',
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'public/asset/js')
+    path: path.resolve(__dirname, '/public/asset/'),
+    filename: 'js/bundle.js'
   },
 
   mode: 'development',
@@ -89,7 +88,9 @@ module.exports = {
   },
 
   devServer: {
+    hot: true,
     contentBase: path.join(__dirname, 'public'),
-    publicPath: '/asset/js/'
-  }
+    publicPath: '/asset/',
+    filename: 'js/bundle.js'
+  },
 };
