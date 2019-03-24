@@ -71,7 +71,7 @@ video, #canvas-template, #template {
   display: block;
   visibility: hidden;
 }
-canvas, #canvas-template, #template, #error {
+#canvas-template, #template, #error {
   position: absolute;
   top: 18px;
   width: 300px;
@@ -115,4 +115,11 @@ canvas, #canvas-template, #template, #error {
 }
 #cattotopia:hover {
   color: #ff9100;
+}
+video {
+  position: absolute;
+  top: -10000px;
+}
+canvas {
+  position: relative;
 }
